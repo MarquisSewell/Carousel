@@ -2,32 +2,69 @@
 
 <html>
 
-  <head>
-  
-    <title>Carousel</title>
-    
-  </head>
-  
-  <body>
-  
-   <div class="navbar">
+	<head>
 
-      <div class="navbar-inner">
+		<title>Carousel</title>
 
-         <ul class="nav">
-         
-         </ul>
-         
-      </div>
-      
-   </div>
-   
-   <img src="https://f.cloud.github.com/assets/5033773/962849/4c10d57e-04f7-11e3-8f5b-5554962c4298.jpg">
-   
-   <img src="https://f.cloud.github.com/assets/5033773/962850/4d90272e-04f7-11e3-9287-22a318a1fa3b.jpg">
-   
-   <img src="https://f.cloud.github.com/assets/5033773/962851/4f4587da-04f7-11e3-89d6-54b7a7096e4c.jpg">
-   
-  </body>
-  
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+		<script src="jquery-2.0.3.js"></script>
+
+		<script src="bootstrap.js"></script>
+
+	</head>
+
+	<body>
+
+	    <div class="container">
+
+		<div class="navbar">
+
+			<div class="navbar-inner">
+
+				<a class="brand" href="http://getbootstrap.com/2.3.2/javascript.html#carousel">Carousel</a>
+
+			</div>
+
+		</div>
+
+		<div id="myCarousel" class="carousel slide">
+
+			<div class="carousel-inner">
+
+				<div class="item active">
+
+					<img src="https://f.cloud.github.com/assets/5033773/962850/4d90272e-04f7-11e3-9287-22a318a1fa3b.jpg">
+
+				</div>
+
+				<div class="item">
+
+					<img src=" <img src="https://f.cloud.github.com/assets/5033773/962849/4c10d57e-04f7-11e3-8f5b-5554962c4298.jpg">
+
+				</div>
+
+          <img src="https://f.cloud.github.com/assets/5033773/962851/4f4587da-04f7-11e3-89d6-54b7a7096e4c.jpg">
+
+				</div>
+
+			</div>
+
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				$('.carousel').carousel();
+			});
+		</script>
+
+	  </div>
+
+	</body>
+
 </html>
+
